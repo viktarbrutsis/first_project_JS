@@ -1,22 +1,23 @@
-"use strict";
+//"use strict";
 
-let numberOfFiles = prompt('Сколько фильмов вы уже посмотрели?', '');
+let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
 
 let personalMovieDB = {
+   count: numberOfFilms,
+   movies: {},
+   actors: {},
+   genres: [],
+   privat: false
    
-}
+};
 
-personalMovieDB.count = numberOfFiles;
-personalMovieDB.movies = {};
-personalMovieDB.actors = {};
-personalMovieDB.genres = [];
-removeEventListener.privat = false;
 
-let lastFim = prompt('Один из последних просмотренных фильмов?', '');
-let critic = prompt('На сколько оцените его?', '');
+let lastFim_1 = prompt('Один из последних просмотренных фильмов?', '');
+let critic_1 = prompt('На сколько оцените его?', '');
+let lastFim_2 = prompt('Один из последних просмотренных фильмов?', '');
+let critic_2 = prompt('На сколько оцените его?', '');
 
-let movies = {
+personalMovieDB.movies[lastFim_1] = critic_1;
+personalMovieDB.movies[lastFim_2] = critic_2;
 
-}
-
-movies.[lastFilm] = critic;
+console.log(personalMovieDB);
