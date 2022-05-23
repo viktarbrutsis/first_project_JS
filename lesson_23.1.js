@@ -7,7 +7,7 @@ function firstTask() {
 
 // Место для второй задачи
 function secondTask() {
-   for (let j = 20; j >= 10; j++) {
+   for (let j = 20; j >= 10; j--) {
        console.log(j);
        if (j ===13) break;
    }
