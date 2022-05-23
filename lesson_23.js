@@ -37,7 +37,7 @@ first: for (let i = 1; i < 3; i++) {
       for (let j = 0; j < 3; j++) {
          console.log(`Second level: ${j}`);
          for (let k = 0; k < 3; k++) {
-            if (k ===2) continue first; // ïðîäîëæàåì ñ ìåòêè, öèêë äàëüøå íå èäåò
+            if (k ===2) continue first; // Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð°ÐµÐ¼ Ñ Ð¼ÐµÑ‚ÐºÐ¸, Ñ†Ð¸ÐºÐ» Ð´Ð°Ð»ÑŒÑˆÐµ Ð½Ðµ Ð¸Ð´ÐµÑ‚
             console.log(`Third level: ${k}`);
          }
       }
@@ -48,7 +48,7 @@ first: for (let i = 1; i < 3; i++) {
          for (let j = 0; j < 3; j++) {
             console.log(`Second level: ${j}`);
             for (let k = 0; k < 3; k++) {
-               if (k ===2) break first; // âîîáùå îñòàíàâëèâàåò öèêë
+               if (k ===2) break first; // Ð²Ð¾Ð¾Ð±Ñ‰Ðµ Ð¾ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ñ†Ð¸ÐºÐ»
                console.log(`Third level: ${k}`);
             }
          }
