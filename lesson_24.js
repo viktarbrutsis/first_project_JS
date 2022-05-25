@@ -25,9 +25,8 @@ let personalMovieDB = {
 //}
 let i = 0;
 do {
-   let lastFilm_1 = prompt('Один из последних просмотренных фильмов?', ''),
+   let lastFilm_1 = prompt('Один из последних просмотренных фильмов?', '');
        critic_1 = prompt('На сколько оцените его?', '');
-
        if (lastFilm_1 != null && critic_1 != null && lastFilm_1 != '' && critic_1 != '' && lastFilm_1.length < 50 && critic_1.length < 50) {
                personalMovieDB.movies[lastFilm_1] = critic_1;
 
@@ -41,11 +40,11 @@ do {
 } while (i < 2)
 
 if (personalMovieDB.count < 10) {
-   console.log("Просмотрено мало фильмов!!!");
+   console.log("Просмотрено слишком мало фильмов!!!");
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
-   console.log("Неплохой результат!!!");
+   console.log("Достойный результат!!!");
 } else if (personalMovieDB.count > 30) {
-   console.log("Киноман!!!");
+   console.log("Вы киноман!!!");
 }
 
 console.log(personalMovieDB);
