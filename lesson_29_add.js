@@ -65,3 +65,27 @@ function findMaxNumber(a, b ,c, d) {
 }
 
 findMaxNumber(1, 5, 6.6, 10.5, 10, 35, 47);
+
+function fib(num) {
+   let arr = [0, 1];
+   let i = 2;
+   let str = '0 1';
+   if (typeof(num) !== 'number' || !Number.isInteger(num) || num == 0) {
+      return '';
+   } else if (num == 1) {
+      console.log(str);
+   } 
+   else if (num == 2) {
+      console.log(arr);
+   } 
+   else  
+   do {
+               arr[i] =  arr[i - 1] + arr[i - 2];
+               str = str + ' ' + arr[i];
+               i++;
+            }
+            while (num > arr.length);
+            console.log(str);    
+   }
+
+fib(7);
