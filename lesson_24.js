@@ -43,8 +43,10 @@ if (personalMovieDB.count < 10) {
    console.log("Просмотрено слишком мало фильмов!!!");
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
    console.log("Достойный результат!!!");
-} else if (personalMovieDB.count > 30) {
+} else if (personalMovieDB.count >= 30) {
    console.log("Вы киноман!!!");
+} else {
+   console.log("Прозошла ошибка");
 }
 
 console.log(personalMovieDB);
