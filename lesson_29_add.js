@@ -89,3 +89,27 @@ function fib(num) {
    }
 
 fib(7);
+
+function fib(num) {
+   let arr = [0, 1];
+   let i = 2;
+   let str = '0 1';
+   if (typeof(num) !== 'number' || !Number.isInteger(num) || num == 0) {
+      return '';
+   } else if (num == 1) {
+      return '0';
+   } 
+   else if (num == 2) {
+      return str;
+   } 
+   else  
+   do {
+               arr[i] =  arr[i - 1] + arr[i - 2];
+               str = str + ' ' + arr[i];
+               i++;
+            }
+            while (num > arr.length);
+            return str;    
+   }
+
+fib(7);
