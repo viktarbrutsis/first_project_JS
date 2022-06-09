@@ -48,9 +48,9 @@ function compareNum (a, b) {
 //const newNames = names.sort();
 //console.log(newNames);
 
-const arr = [34, 943, 6, 2, 4, 7, 12, 56, 40];
+const arrNew = [34, 943, 6, 2, 4, 7, 12, 56, 40];
 arr.sort(compareNum);
-console.log(arr);
+console.log(arrNew);
 
 function compareNum (a, b) {
    return a - b;
