@@ -68,5 +68,3 @@ showMyDB();
 //}
 
 //writeYourGenres();
-
-
